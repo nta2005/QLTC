@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titleThemKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="THÊM KHOẢN THU"
+        android:textColor="@color/grey_dam"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/them_mota_gd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_edt"
+            android:drawableRight="@drawable/ic_mota"
+            android:drawableTint="@color/grey_dam"
+            android:hint="Mô tả giao dịch"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@color/grey_dam"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/them_ngay_gd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_edt"
+            android:drawableRight="@drawable/ic_date"
+            android:drawableTint="@color/grey_dam"
+            android:hint="Ngày giao dịch"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/grey_dam"
+            android:textSize="16dp" />
+
+        <EditText
+
+            android:id="@+id/them_tien_gd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_edt"
+            android:drawableRight="@drawable/ic_money"
+            android:drawableTint="@color/grey_dam"
+            android:hint="Số tiền"
+            android:inputType="number"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:textColorHint="@color/grey_dam"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/spLoaiGd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/xoaTextGD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui"
+                android:text="Hủy"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnThemGD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui2"
+                android:text="Thêm"
+
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@tools:sample/first_names">
+
+    <!--now add some icons-->
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/khoanthu"
+            android:icon="@drawable/ic_attach_money"
+            android:title="Khoản thu" />
+        <item
+            android:id="@+id/khoanchi"
+            android:icon="@drawable/ic_monetization"
+            android:title="Khoản chi" />
+        <item
+            android:id="@+id/thongke"
+            android:icon="@drawable/ic_thong_ke"
+            android:title="Thống kê" />
+
+    </group>
+
+    <item android:title="Hỗ trợ">
+
+        <menu>
+            <item
+                android:id="@+id/doimatkhau"
+                android:icon="@drawable/ic_key"
+                android:title="Đổi mật khẩu" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_out"
+                android:title="Đăng xuất" />
+            <item
+                android:id="@+id/gioithieu"
+                android:icon="@drawable/ic_app_info"
+                android:title="Giới thiệu" />
+        </menu>
+
+    </item>
+
+</menu>
